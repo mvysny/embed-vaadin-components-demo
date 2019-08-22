@@ -16,8 +16,8 @@ Read the full documentation on this technique at
 To access it directly from github, clone the repository and import the project to the IDE of your choice as a Maven project. You need to have Java 8 or 11 installed.
 
 Run using `mvn jetty:run` and open [http://localhost:8080](http://localhost:8080) in the browser.
-That opens a static [index.html](src/main/webapp/index.html) page which demoes embedding of the component.
-To see the component in a full-blown Vaadin 14 app, open [http://localhost:8080/vaadin/](http://localhost:8080/vaadin/)
+That opens a static [index.html](src/main/webapp/index.html) page which demoes embedding of the [component](src/main/java/com/vaadin/starter/skeleton/MyComponent.java).
+To see the component in a [full-blown Vaadin 14 app](src/main/java/com/vaadin/starter/skeleton/MainView.java), open [http://localhost:8080/vaadin/](http://localhost:8080/vaadin/)
 
 If you want to run your app locally in the production mode, run `mvn jetty:run -Pproduction`.
 
