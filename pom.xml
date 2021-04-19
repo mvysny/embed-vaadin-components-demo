@@ -16,7 +16,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <failOnMissingWebXml>false</failOnMissingWebXml>
 
-        <vaadin.version>14.3.5</vaadin.version>
+        <vaadin.version>14.5.3</vaadin.version>
     </properties>
 
     <repositories>
@@ -130,9 +130,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <pnpmEnable>true</pnpmEnable>
-                </configuration>
             </plugin>
         </plugins>
     </build>
@@ -165,9 +162,6 @@
                                 <phase>compile</phase>
                             </execution>
                         </executions>
-                        <configuration>
-                            <pnpmEnable>true</pnpmEnable>
-                        </configuration>
                     </plugin>
                 </plugins>
             </build>
