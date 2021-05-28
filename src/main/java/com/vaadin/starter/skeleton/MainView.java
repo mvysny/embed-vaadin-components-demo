@@ -1,8 +1,6 @@
 package com.vaadin.starter.skeleton;
 
-import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
@@ -22,6 +20,11 @@ public class MainView extends VerticalLayout {
         add(new MyComponent());
     }
 
+    /**
+     * Makes sure the Vaadin Servlet doesn't bind to the `/*` context root, which
+     * would capture all requests which would
+     * prevent us from navigating to {@code index.html}.
+     */
     @WebServlet(urlPatterns = {"/vaadin/*", "/frontend/*" })
     public static class WebComponentVaadinServlet
             extends VaadinServlet {

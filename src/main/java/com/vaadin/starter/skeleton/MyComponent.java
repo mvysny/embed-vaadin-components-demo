@@ -7,6 +7,9 @@ import com.vaadin.flow.component.webcomponent.WebComponent;
 import com.vaadin.flow.function.SerializableBiConsumer;
 
 /**
+ * A very simple custom component. When MainView is browsed, the component is used directly;
+ * when the {@code index.html} is browsed, the component is instantiated via the
+ * {@link MyComponent.Exporter}.
  * @author mavi
  */
 public class MyComponent extends VerticalLayout {
