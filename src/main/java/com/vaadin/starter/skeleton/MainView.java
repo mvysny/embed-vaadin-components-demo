@@ -1,5 +1,6 @@
 package com.vaadin.starter.skeleton;
 
+import com.vaadin.flow.component.html.Anchor;
 import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
@@ -16,8 +17,11 @@ import javax.servlet.annotation.WebServlet;
 public class MainView extends VerticalLayout {
 
     public MainView() {
-        add(new Span("Using the component directly from the MainView Vaadin route"));
-        add(new MyComponent());
+        add(new Span("Using the component directly from the MainView Vaadin route. To see the component used from a static page, navigate to"));
+        add(new Anchor("../", "index.html"));
+        final MyComponent component = new MyComponent();
+        component.setGreeting("Hello from Vaadin app!");
+        add(component);
     }
 
     /**
