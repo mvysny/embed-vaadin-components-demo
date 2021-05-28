@@ -16,7 +16,7 @@ import javax.servlet.annotation.WebServlet;
 public class MainView extends VerticalLayout {
 
     public MainView() {
-        add(new Span("Using the component from its own Vaadin app"));
+        add(new Span("Using the component directly from the MainView Vaadin route"));
         add(new MyComponent());
     }
 
